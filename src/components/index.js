@@ -1,0 +1,6 @@
+export { default as Navbar } from './navbar/Navbar'
+export { default as Tool } from './tool/Tool'
+export { default as Brand } from './brand/Brand'
+export { default as Testimonial } from './testimonial/Testimonial'
+export { default as Cta } from './cta/Cta'
+export { default as SimpleSlider } from './SimpleSlider/SimpleSlider'

@@ -1,0 +1,95 @@
+.footer {
+    display: flex;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+
+    margin-top: 15rem;
+
+    &-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+
+        width: 100%;
+        text-align: left;
+        margin-top: 60px;
+
+        & div {
+            width: 260px;
+            margin: 1rem 0;
+        }
+
+        &_logo {
+            display: flex;
+            flex-direction: column;
+
+            & img {
+                width: 140px;
+                height: 38px;
+                margin-bottom: 1.5rem;
+            }
+
+            & p:first-of-type {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(255, 255, 255, 0.9);
+
+                margin-bottom: 1.5rem;
+            }
+
+            & p:last-of-type {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+                color: rgba(255, 255, 255, 0.55);
+            }
+        }
+
+        &_div {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            & h4 {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: rgba(255, 255, 255, 0.9);
+
+                margin-bottom: 1.25rem;
+            }
+
+            & p {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(255, 255, 255, 0.55);
+
+                margin: 0.5rem 0;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .footer {
+        margin-top: 10rem;
+
+        .footer-links_div {
+            margin: 1rem 0;
+        }
+    }
+
+
+
+}

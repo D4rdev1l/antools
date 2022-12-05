@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap');
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --font-testimonial: 'Roboto', sans-serif;
+
+    --color-bg: #1e252b;
+    --color-btn: #FF6E30;
+    --color-subtext: rgba(255, 255, 255, 0.55);  
+}
+

@@ -1,0 +1,104 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 16rem;
+
+    &-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h4 {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 62px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        & p {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.55);
+
+            margin-top: 1.5rem;
+        }
+    }
+
+    &-input {
+        display: flex;
+        position: relative;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        max-width: 497px;
+        padding-left: 20px;
+        border-radius: 15px;
+        background-color: #283036;
+        width: 100%;
+        margin-top: 6.25rem;
+
+        & input {
+            flex: 2;
+            min-height: 53px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            background: #283036;
+            border: 0;
+            color: rgba(255, 255, 255, 0.38);
+            outline: none;
+            width: 100%;
+            padding: 0 1rem;
+        }
+
+        & button {
+            background: var(--color-btn);
+            border-radius: 8px;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            cursor: pointer;
+            padding: 0.75rem 2.25rem;
+            border: 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .cta-heading h4 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .cta-heading p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .cta-input{
+        gap: 5px;
+        padding: 5px;
+
+        margin-top: 4.25rem;
+
+        & button {
+           padding: 0.5rem 1.25rem; 
+        }
+    }
+
+
+    
+    
+}

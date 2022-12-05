@@ -1,0 +1,152 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+    
+    &-logo {
+        img{
+            height: 38px;
+            width: 140px;
+        }
+    }
+
+    &-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        &_dropdownLink {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+        &_dropdownLinkIcon {
+            font-size: 1.7em;
+        }
+    }
+
+    &-sign {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
+    }
+
+    &-links p,
+    &-sign p,
+    &-menu_container p {
+        position: relative;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-subtext);
+        
+        margin: 0 2.5rem;
+        cursor: pointer;
+    }
+
+    &-sign button,
+    &-menu_container button {
+        padding: 0.75rem 1.75rem;
+        background: var(--color-btn);
+        border-radius: 8px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FDF5FF;   
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &-menu{
+        margin-left: 1rem;
+
+        display: none;
+        position: relative;
+
+        & svg {
+            cursor: pointer;
+        }
+        
+        &_container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+
+            text-align: center;
+            background-color: #283036;
+            padding: 2rem;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            margin-top: 1rem;
+            min-width: 210px;
+            border-radius: 8px;
+            box-shadow: 0 0 5 #1e2429;
+
+        }
+
+        &_container p {
+            margin: 1rem 0;
+        }
+
+        &_container-links_sign {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar {
+
+        &-links {
+            display: none;
+        }
+
+        &-sign {
+            flex: 1;
+        }
+
+        &-menu {
+            display: flex;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        padding: 1rem;
+
+        &-sign {
+            display: none;
+        }
+
+        &-menu {
+
+            &_container {
+                top: 20px;
+
+                &-links_sign {
+                    display: block;
+                }    
+            }
+        }
+    }
+}
+

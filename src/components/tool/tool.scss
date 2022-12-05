@@ -1,0 +1,212 @@
+.tools-container-tool {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    transition: 250ms ease-in-out;
+
+    max-width: 392px;
+    border-radius: 15px;
+    padding: 33px;
+    background-color: var(--color-bg);
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        opacity: 0;
+        width: 65px;
+        height: 65px;
+        content: "";
+        top: -15px;
+        right: 16px;
+        border-radius: 50%;
+        position: absolute;
+        filter: blur(50px);
+        background-color: var(--color-btn);
+    }
+
+    &:hover {
+        background: rgba(40, 48, 54, 0.6);
+        backdrop-filter: blur(50px);
+        transform: translateY(-10px);
+
+        &:hover .tools-container-tool__heading h4 {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        &:hover .tools-container-tool__heading p {
+            color: #FFA537;
+        }
+
+        &:hover .tools-container-tool__discription p {
+            color: rgba(255, 255, 255, 0.78);
+        }
+
+        &:hover .tools-container-tool__footer p {
+            color: #FFFFFF;
+            background: var(--color-btn);
+            border-radius: 8px;
+            padding: 0.5rem 2.1rem;
+        }
+
+
+        &:hover .liked  {
+            color: #FD3B41;
+            
+            &.tools-container-tool__footer-btn_icon{
+                color: var(--color-subtext);   
+            }
+        }
+
+
+        &:hover .tools-container-tool__footer-btn__cover:first-child {
+            background-color: #283036;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        
+
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+
+        & img {
+            width: 64px;
+            height: 64px;
+
+            margin-right: 1.875rem;
+        }
+
+        & h4 {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: rgba(255, 255, 255, 0.78);
+
+            cursor: pointer;
+        }
+
+        & p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: rgba(255, 165, 55, 0.55);
+        }
+    }
+
+    &__discription {
+        margin-top: 2rem;
+
+        & p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: rgba(255, 255, 255, 0.55);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        margin-top: 2.5rem;
+
+        &-btn {
+            display: flex;
+            width: 96px;
+            height: 42px;
+            align-items: center;
+
+            &__cover {
+                padding: 7px;
+                width: 42px;
+                height: 42px;
+                margin-right: 12px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+            }
+
+            &_icon {
+                width: 30px;
+                height: 30px;
+                color: rgba(255, 255, 255, 0.38);
+
+                cursor: pointer;
+
+            }
+        }
+
+        & p {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(255, 255, 255, 0.55);
+
+            cursor: pointer;
+        }
+    }
+
+}
+
+.tools-container-tool,
+.tools-container-tool__footer-btn__cover:first-child,
+.tools-container-tool__footer p,
+.tools-container-tool:before {
+    transition: 250ms ease-in-out;
+}
+
+.liked{
+    & svg {
+        color: #FD3B41;
+        transition: 250ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tools-container-tool__heading-text {
+        & h4 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        & p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .tools-container-tool__discription {
+
+        & p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    .tools-container-tool__footer {
+        & p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+

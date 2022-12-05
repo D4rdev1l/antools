@@ -1,0 +1,5 @@
+export { default as Hero } from './hero/Hero'
+export { default as Tools } from './tools/Tools'
+export { default as Newcomer} from './newcomer/Newcomer'
+export { default as Testimonials } from './testimonials/Testimonials'
+export { default as Footer } from './footer/Footer'
